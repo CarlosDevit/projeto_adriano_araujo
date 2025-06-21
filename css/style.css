@@ -360,7 +360,7 @@ div.linha {
     }
 
     div.text-banner-single p {
-        font-size: 48px;
+        font-size: 38px;
         color: #D4AF37;
         text-align: right;
         animation: piscar-vermelho 1s infinite;
