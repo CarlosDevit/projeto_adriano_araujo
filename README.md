@@ -1,4 +1,4 @@
-# Caudas e Araújos Advocacia - Website
+# Adriano Araújo Advogado - Website
 
 Este projeto é um site institucional desenvolvido para o escritório jurídico liderado pelo advogado Adriano. A proposta é apresentar os serviços jurídicos com seriedade, organização e um design moderno, mantendo a identidade do cliente.
 
@@ -16,16 +16,15 @@ Este projeto é um site institucional desenvolvido para o escritório jurídico 
 ## 🧱 Estrutura do Site
 
 - **Página Principal:** Destaque para os serviços e introdução
-- **Sobre Nós:** Missão, visão, história e valores
-- **Contato:** Formulário de contato, e-mails, telefone e redes sociais
+- **Sobre:** Missão, visão, história e valores
+- **Contato:** Localização, E-mails, telefone e redes sociais
 
 ---
 
 ## 🎨 Paleta de Cores
 
-- Branco (fundo principal)
-- Dourado (seções alternadas)
-- Preto (destaques e texto)
+- Preto (fundo principal)
+- DOurado (destaques e texto)
 
 ---
 
