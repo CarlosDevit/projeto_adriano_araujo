@@ -12,7 +12,7 @@ body {
     scroll-behavior: smooth;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: white;
 
 }
 
@@ -32,355 +32,220 @@ div.container {
 /*Header*/
 
 header {
-    padding: 10px 2%;
-    height: auto;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    background-image: url('../images/Fundo_header.jpeg');
+    height: 200px;
+    width: 100%;
+    background-size: contain;
 }
 
-header div.logo {
-    float: left;
+div.logo {
     background-image: url('../images/Logo.png');
-    width: 30%;
-    max-width: 230px;
-    min-width: 230px;
-    height: 130px;
+    width: 50%;
+    max-width: 250px;
+    height: 170px;
     /* background-color: purple; */
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-/*****/
-
-/*Nav DESKTOP*/
-
-header nav.desktop {
-    float: right;
-    position: relative;
-    top: 40px;
-}
-
-header nav.desktop ul {
-    list-style-type: none;
-}
-
-header nav.desktop ul li {
-    float: left;
-    font-size: 23px;
-    padding: 0 30px;
-    font-style: italic;
-    font-weight: 500;
-
-}
-
-header nav.desktop ul li a {
-    text-decoration: none;
-    color: gold;
-}
-
-header nav.desktop ul li a:hover {
-    color: #D4AF37;
-    text-decoration: underline;
-}
-
-/*Nav DESKTOP FIM*/
-
-/* === MENU MOBILE LATERAL COM ÍCONE DINÂMICO === */
-
-.mobile-menu-icon {
-    display: none;
-    width: 50px;
-    height: 50px;
-    z-index: 1001;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-}
-
-.mobile-menu-icon img {
-    width: 100%;
-    height: auto;
-}
-
-.mobile-nav {
-    position: fixed;
+    position: absolute;
     top: 0;
-    right: -100%;
-    width: 300px;
-    height: 100vh;
-    background-color: black;
-    z-index: 1000;
-    transition: right 0.4s ease;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*desktop*/
+
+nav.desktop ul {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-}
-
-.mobile-nav.open {
-    right: 0;
-}
-
-.mobile-nav ul {
+    gap: 40px;
     list-style: none;
     padding: 0;
-    margin: 0;
-    text-align: center;
+    margin-top: 20px;
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.mobile-nav ul li {
-    margin: 20px 0;
-    border-bottom: 1px solid #D4AF37;
-}
-
-.mobile-nav ul li a {
-    color: #D4AF37;
-    font-size: 32px;
+nav.desktop ul li a {
     text-decoration: none;
-    transition: 0.3s;
-
+    color: #b18d50;
 }
 
-.mobile-nav ul li a:hover {
+nav.desktop ul li a:hover {
+    text-decoration: underline;
     color: white;
 }
 
-.social-icons {
-    margin-top: 40px;
-    display: flex;
-    gap: 20px;
-}
+/*mobile*/
 
-.social-icons img {
-    width: 40px;
-    height: 40px;
-}
-
-/*Nav MOBILE FIM*/
-
-/* ***** */
-
-/* Chamada para Defesa Criminal */
-
-section.call {
-
-    overflow: hidden;
-    width: 100%;
-    height: 650px;
-    background-size: contain;
-    background-image: url(../images/bg.png);
-    background-position: right bottom;
-    background-repeat: no-repeat;
-}
-
-div.text-banner {
-    padding: 100px;
-    float: left;
-}
-
-div.text-banner-single {
-    width: 915px;
-    margin-top: 90px;
-    height: 80px;
-    line-height: 90px;
-    padding-left: 50px;
-    animation-delay: 0.2s;
-
-}
-
-div.text-banner-single p {
-    font-style: italic;
-    text-transform: uppercase;
-    color: #D4AF37;
-    font-size: 90px;
-    transition: 1s;
-
-}
-
-div.text-banner div.text-banner-single:nth-of-type(2) {
-    width: 800px;
-    height: 90px;
-    line-height: 70px;
-    position: relative;
-    left: -10px;
-    animation-delay: 0.4s;
-}
-
-div.text-banner div.text-banner-single:nth-of-type(3) {
-    width: 800px;
-    height: 200px;
-    line-height: 80px;
-    position: relative;
-    left: -20px;
-    animation-delay: 0.6s;
-}
-
-div.text-banner div.text-banner-single:nth-of-type(4) {
-    width: 820px;
-    font-size: 43px;
-    color: black;
-    position: relative;
-    left: -30px;
-    line-height: 70px;
-    animation-delay: 0.8s;
-}
-
-div.text-banner div.text-banner-single:nth-of-type(4) a {
-    text-decoration: none;
-
-}
-
-div.whatsapp-img {
-    width: 60px;
-    /* ou 100% se quiser ajustar ao container */
-    height: auto;
+div.mobile-menu-icon {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
     cursor: pointer;
 }
 
-div.linha {
-    opacity: 0;
-    transform: translateX(-100%);
-    animation: entrar 0.8s forwards;
+div.mobile-menu-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+nav.mobile-nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 200px;
+    /* logo abaixo do botão */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 9;
+}
+
+/* Quando o menu estiver aberto */
+nav.mobile-nav.open {
+    display: flex;
+}
+
+nav.mobile-nav ul li {
     margin: 10px 0;
+    text-align: center;
 }
 
-/* ***** */
-
-/*Animaçoes*/
-
-/*Animacao Chamada*/
-@keyframes entrar {
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-/* animacao piscar text banner vermelho */
-
-@keyframes piscar-vermelho {
-
-    0%,
-    100% {
-        color: #D4AF37;
-        /* dourado normal */
-    }
-
-    50% {
-        color: red;
-    }
-}
-
-/* ***** */
-
-/*Media Query*/
-
-/*max-width: 1760p*/
-
-@media screen and (max-width: 1760px) {
-    div.text-banner-single p {
-        font-size: 70px;
-        transition: 0.4s;
-    }
+nav.mobile-nav ul li a {
+    text-decoration: none;
+    color: #b18d50;
+    font-size: 18px;
 
 }
 
-/* ***** */
+nav.mobile-nav ul li a:hover {
+    text-decoration: underline;
+    color: white;
+}
 
-/* max-width: 1580px */
+nav.mobile-nav .social-icons {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
 
-@media screen and (max-width: 1580px) {
-    div.text-banner-single p {
-        font-size: 60px;
-        transition: 0.4s;
-    }
+nav.mobile-nav .social-icons img {
+    width: 32px;
+    height: 32px;
+}
+
+/*Section parallax*/
+
+.parallax-section {
+    height: 300px;
+    /* altura da section visível */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url('../images/bg.png');
+    /* troque pela sua imagem */
+    background-attachment: fixed;
+    /* o segredo do efeito parallax */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    /*       text-shadow: 5px 5px 5px black; */
+}
+
+nav.areas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
-/* ***** */
 
-/* max-width: 1490px */
+nav.areas ul li {
+    margin: 10px 0;
+    text-align: center;
+    list-style: none;
+    border-bottom: 4px solid #b18d50;
+}
 
-@media screen and (max-width: 1490px) {
-    div.text-banner-single p {
-        font-size: 50px;
-        transition: 0.4s;
-    }
+nav.areas ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #b18d50;
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 1;
 
 }
 
-/* ***** */
-
-/* max-width: 1400px */
-/* === Responsividade progressiva abaixo de 1400px === */
-@media screen and (max-width: 1400px) {
-    div.text-banner {
-        padding: 80px 40px;
-    }
-
-    div.text-banner-single {
-        padding-left: 20px;
-    }
-
-    div.text-banner-single p {
-        font-size: 40px;
-        text-align: left;
-    }
-
+nav.areas ul li a:hover {
+    text-decoration: underline;
+    color: white;
 }
 
-/* === Modo mobile abaixo de 1024px: texto sobrepõe imagem pela direita === */
+/*Section atendimento*/
 
-/* === Modo mobile abaixo de 1024px: texto vai para a direita === */
-@media screen and (max-width: 1024px) {
-    section.call {
-        height: auto;
-        padding: 40px 20px;
-        background-size: cover;
-        background-position: center;
-    }
+section.atendimento div.container {
+    display: flex;
+    /* Deixa os ícones em linha */
+    justify-content: space-around;
+    /* Espaço entre eles */
+    align-items: center;
+    /* Alinha verticalmente */
+    padding: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+    background-color: #000000f6;
+}
 
-    div.text-banner {
-        padding: 0;
-        width: 100%;
-        display: block;
-    }
+.icone-item {
+    display: flex;
+    flex-direction: column;
+    /* Ícone em cima, texto embaixo */
+    align-items: center;
+    text-align: center;
+    max-width: 150px;
+}
 
-    div.text-banner-single {
-        width: auto !important;
-        /* Remove largura fixa */
-        position: static !important;
-        /* Remove deslocamento */
-        padding: 10px 5% !important;
-        /* Espaço nas laterais */
-        margin: 10px 0 !important;
-        text-align: right !important;
-        /* Alinha tudo à direita */
-    }
+.icone-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
 
-    div.text-banner-single p {
-        font-size: 38px;
-        color: #D4AF37;
-        text-align: right;
-        animation: piscar-vermelho 1s infinite;
-    }
-
-    .whatsapp-img {
-        width: 440px;
-        height: auto;
-    }
+section.atendimento p {
+    color: white;
+    font-size: 18px;
 }
 
 /* === MENU MOBILE A PARTIR DE 900PX === */
 
 @media screen and (max-width: 900px) {
-    .mobile-menu-icon {
+    div.mobile-menu-icon {
         display: block;
     }
 
     nav.desktop {
-        display: none;
+        display: none !important;
+        /* força ocultar no mobile */
     }
 }
 

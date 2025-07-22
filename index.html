@@ -21,7 +21,7 @@
     wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;
     1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!---- fonts ---->
-<!-- Pre-config + Chaves de pesquisa + Informaçoes -->
+    <!-- Pre-config + Chaves de pesquisa + Informaçoes -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,
       maximum-scale=1.0">
@@ -39,17 +39,17 @@
     <!-- Links Css e JS e Icon -->
     <link href="css/style.css" rel="stylesheet" />
     <script src="js/script.js" defer></script>
-    <link rel="icon" href="icons/favicon-32x32.png" sizes="32x32" type="image/x-icon">
+    <link rel="icon" href="icons/android-chrome-512x512.png" sizes="512x512" type="image/x-icon">
     <!-- ---- -->
 
 </head>
 
 <body>
 
-    <header> <!-- Cabeçario -Logo e menu -->
+    <header id="inicio"> <!-- Cabeçario -Logo e menu -->
 
         <div class="container">
-            <div class="logo"></div><!-- Logo -->
+            <div class="logo" onclick="window.location.href='#inicio'"></div><!-- Logo -->
 
             <!-- Ícone do menu hamburguer -->
             <div class="mobile-menu-icon" onclick="toggleMenu()">
@@ -59,23 +59,23 @@
             <!-- Menu Desktop -->
             <nav class="desktop">
                 <ul>
-                    <li><a style="color: #D4AF37;" href="">Home</a></li>
-                    <li><a href="">Áreas de Atuação</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><a href="#inicio">Home</a></li>
+                    <li><a href="#areas_de_atuacao">Áreas de Atuação</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
 
             <!-- Menu Mobile -->
             <nav id="mobile-nav" class="mobile-nav">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Áreas de Atuação</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><a href="#inicio">Home</a></li>
+                    <li><a href="#areas_de_atuacao">Áreas de Atuação</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
                 <div class="social-icons">
-                    <a href="" target="_blank">
+                    <a href="https://www.instagram.com/" target="_blank">
                         <img src="images/instagram.png" alt="Instagram">
                     </a>
                     <a href="https://wa.me/5511986996897?text=Preciso%20de%20um%20Advogado.%20Está%20disponível?"
@@ -84,33 +84,42 @@
                     </a>
                 </div>
             </nav>
-
-            <div class="clear"></div> <!-- limpar float -->
         </div>
 
-    </header> <!-- Cabeçario -Logo e menu -->
+    </header> <!-- Cabeçario Logo e menu -->
 
-    <section class="call"><!-- Call - Chamada para Direito Criminal -->
+    <section class="parallax-section">
         <div class="container">
-            <div class="text-banner">
-                <div class="text-banner-single linha">
-                    <p>Defesa Criminal</p>
-                </div><!-- text-banner-single -->
-                <div class="text-banner-single linha">
-                    <p>24 Horas</p>
-                </div><!-- text-banner-single -->
-                <div class="text-banner-single linha">
-                    <p>Em caso de<br>Urgência</p>
-                </div><!-- text-banner-single -->
-                <div class="text-banner-single linha">
-                    <a href="https://wa.me/5511986996897?text=Preciso%20de%20Defesa%20Criminal.%20Está%20disponível?"
-                        target="_blank">
-                        <img src="images/whatsapp-contato.png" alt="WhatsApp" width="500" class="whatsapp-img">
-                    </a>
-                </div><!-- text-banner-single -->
-            </div><!-- text-banner -->
-        </div><!-- container -->
-    </section><!-- Call - Chamada para Direito Criminal -->
+            <nav class="areas">
+                <ul>
+                    <li><a href="">Criminal</a></li>
+                    <li><a href="">cível</a></li>
+                    <li><a href="">trabalhista</a></li>
+                    <li><a href="">previdenciário</a></li>
+                    <li><a href="">Direito do consumidor</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </section><!-- HOME -->
+
+    <section class="atendimento">
+        <div class="container">
+            <div class="icone-item">
+                <img src="images/atendimento_humanizado.png" alt="Atendimento Humanizado">
+                <p>Atendimento Humanizado</p>
+            </div>
+            <div class="icone-item">
+                <img src="images/atendimento_24_horas.png" alt="Atendimento Criminal 24h">
+                <p>Atendimento Criminal 24h</p>
+            </div>
+            <div class="icone-item">
+                <img src="images/atendimento_online.png" alt="Atendimento Online">
+                <p>Atendimento Online</p>
+            </div>
+
+        </div>
+    </section><!-- atendimento -->
 
 
 
