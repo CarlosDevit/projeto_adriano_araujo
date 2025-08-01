@@ -1,4 +1,4 @@
-# Caldas & Araújo Advocacia - Website
+# Adriano Araújo Advocacia e Consultoria Jurídica - Website
 
 Este projeto é um site institucional desenvolvido para o escritório jurídico liderado pelo advogado Adriano. A proposta é apresentar os serviços jurídicos com seriedade, organização e um design moderno, mantendo a identidade do cliente.
 
@@ -39,6 +39,8 @@ Este projeto é um site institucional desenvolvido para o escritório jurídico 
 2. Atualize os campos de formulário com o e-mail desejado ou configure o WhatsApp.
 3. Hospede os arquivos em um servidor como HostGator ou GitHub Pages.
 
+---
+## ✅ Status de Desenvolvimento 95%
 ---
 
 Desenvolvido com dedicação por Carlos Devit✨

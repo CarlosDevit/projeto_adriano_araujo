@@ -12,7 +12,8 @@ body {
     scroll-behavior: smooth;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: black;
+
 
 }
 
@@ -236,6 +237,246 @@ section.atendimento p {
     font-size: 18px;
 }
 
+
+/*******/
+
+/* Section Areas de Atuação */
+
+/* ======================
+   Estilos da Seção Áreas de Atuação
+========================= */
+
+.areas_de_atuacao {
+    padding: 40px 20px;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url('../images/bg.png');
+    /* troque pela sua imagem */
+    background-attachment: fixed;
+    /* o segredo do efeito parallax */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.areas_de_atuacao h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #111;
+    padding: 1px;
+
+}
+
+/* ===== Linhas de Cards (agrupamentos) ===== */
+.linha {
+    display: flex;
+    justify-content: center;
+    /* Centraliza os cards */
+    flex-wrap: wrap;
+    gap: 30px;
+    /* Espaçamento entre cards */
+    margin-bottom: 40px;
+}
+
+.linha-base {
+    justify-content: center;
+    /* Centraliza os dois cards da base */
+}
+
+/* ===== Estilo dos Cards individuais ===== */
+
+a.card {
+    text-decoration: none;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease;
+    border: 1px solid #b18d50;
+    text-decoration: none;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    /* Efeito ao passar o mouse */
+}
+
+/* ===== Imagem dentro dos cards ===== */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+/* ===== Título e texto ===== */
+.card h3 {
+    font-size: 1.4em;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.95em;
+    color: #555;
+    line-height: 1.4em;
+}
+
+/* ******* */
+
+/* secao contato */
+
+.contato {
+    padding: 60px 20px;
+
+}
+
+.container-contato {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info-contato {
+    flex: 1;
+    min-width: 300px;
+}
+
+.info-contato h2 {
+    font-size: 28px;
+    margin-bottom: 50px;
+    color: #b18d50;
+}
+
+.info-contato p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: whitesmoke;
+}
+
+.redes-sociais {
+    margin-top: 20px;
+}
+
+.redes-sociais a {
+    margin-right: 25px;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+.redes-sociais img {
+    width: 100%;
+    height: auto;
+}
+
+.mapa {
+    flex: 1;
+    min-width: 300px;
+    max-height: 300px;
+}
+
+
+/* ****** */
+
+
+/*Footer*/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    background-image: url('../images/Fundo_header.jpeg');
+    height: 100%;
+    max-height: 220px;
+    width: 100%;
+    background-size: contain;
+
+}
+
+footer p {
+
+    color: white;
+    font-size: 19px;
+    font-style: italic;
+}
+
+div.end-logo {
+    max-width: 250px;
+    height: 170px;
+}
+
+div.direitos_autorais {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin-top: 3%;
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 200px;
+
+}
+
+div.direitos_autorais a {
+    text-decoration: none;
+    color: #b18d50;
+    font-weight: bold;
+    font-size: 15px;
+    font-style: italic;
+}
+
+div.direitos_autorais a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/*******/
+
+/* whatsapp-flutuante */
+
+.whatsapp-flutuante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-flutuante:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-flutuante img {
+  width: 60px;
+  height: 60px;
+}
+
+
+/* ****** */
+
 /* === MENU MOBILE A PARTIR DE 900PX === */
 
 @media screen and (max-width: 900px) {
@@ -247,6 +488,116 @@ section.atendimento p {
         display: none !important;
         /* força ocultar no mobile */
     }
+
+    .linha {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        /* Mais largura no mobile */
+    }
+
+    footer .direitos_autorais {
+        flex-direction: row;
+        gap: 10px;
+        font-size: 14px;
+        padding: 0 1%;
+    }
+
+    .container-contato {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .mapa iframe {
+        height: 250px;
+    }
+
+    .info-contato,
+    .mapa {
+        width: 100%;
+    }
+
+    .redes-sociais a {
+        margin: 0 10px;
+    }
 }
 
 /* ***** */
+
+/*estilo padrao paginas direitos criminal, civel, consumidor, previdenciario,
+trabalhista*/
+
+.conteudo-area {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #555;
+}
+
+.imagem-area {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.descricao-area {
+    margin-bottom: 40px;
+}
+
+.descricao-area h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #b18d50;
+    ;
+}
+
+.descricao-area p,
+.descricao-area ul {
+    font-size: 1em;
+    color: whitesmoke;
+    line-height: 1.6em;
+}
+
+.descricao-area ul {
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+.cta-contato {
+    background-color: #f2f2f2;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.cta-contato h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.cta-contato p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.botao-contato {
+    display: inline-block;
+    background-color: #b18d50;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.botao-contato:hover {
+    background-color: #333;
+}
