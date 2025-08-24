@@ -155,7 +155,7 @@ nav.mobile-nav .social-icons img {
 /*Section parallax*/
 
 .parallax-section {
-    height: 300px;
+    height: auto;
     /* altura da section visível */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)), url('../images/bg.png');
