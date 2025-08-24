@@ -557,16 +557,26 @@ trabalhista*/
     ;
 }
 
-.descricao-area p,
-.descricao-area ul {
+.descricao-area p{
     font-size: 1em;
     color: whitesmoke;
     line-height: 1.6em;
 }
 
 .descricao-area ul {
+    font-size: 1em;
+    color: #b18d50;
+    line-height: 1.6em;
+}
+
+.descricao-area ul {
     padding-left: 20px;
     margin-top: 15px;
+}
+
+.descricao-area ul li{
+     font-weight: bold;
+     text-transform: uppercase;
 }
 
 .cta-contato {

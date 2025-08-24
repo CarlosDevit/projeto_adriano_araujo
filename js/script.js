@@ -39,3 +39,31 @@ window.addEventListener("resize", () => {
         }
     }
 });
+
+
+/*
+
+EFEITO PIRAMIDE NO HTML BASE 2 ITENS
+
+
+            <!-- Linha inferior com 2 áreas (base da pirâmide invertida) -->
+            <div class="linha linha-base">
+                <!-- Início do Card: Direito Previdenciário -->
+                <a href="direito-previdenciario.html" class="card">
+                    <img src="images/previdenciario.png" alt="Direito Previdenciário">
+                    <h3 style="color: #b18d50;">Direito Previdenciário</h3>
+                    <p>Atuação em aposentadorias, benefícios por incapacidade, revisão de cálculos e auxílio junto ao
+                        INSS.</p>
+                </a>
+                <!-- Fim do Card: Direito Previdenciário -->
+
+                <!-- Início do Card: Direito do Consumidor -->
+                <a href="direito-consumidor.html" class="card">
+                    <img src="images/consumidor.png" alt="Direito do Consumidor">
+                    <h3 style="color: #b18d50;">Direito do Consumidor</h3>
+                    <p>Defesa dos direitos do consumidor em casos de cobranças indevidas, produtos com defeito ou
+                        propaganda enganosa.</p>
+                </a>
+                <!-- Fim do Card: Direito do Consumidor -->
+            </div>
+            <!-- Fim da linha inferior -->*/ 
